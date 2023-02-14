@@ -1,4 +1,4 @@
-var elementVisible = -10;
+var elementVisible = 0;
 var elements = [...document.querySelectorAll("[scroll]")];
 let moveFrom = ["l", "r", "b", "t"], moveto = ["r", "l", "t", "b"];
 window.addEventListener("scroll", () => {

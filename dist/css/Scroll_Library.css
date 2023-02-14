@@ -1,6 +1,8 @@
 :root {
   --scale: 1;
   --duration: 2s;
+  --rotateX: 0deg;
+  --rotateY: 0deg;
   --rotateZ: 0deg;
 }
 /* ------------------------ PROPERTY ------------------------- */
@@ -58,6 +60,36 @@
 [s-rotateZ="360"] {
   --rotateZ: 180deg;
 }
+[s-rotateY="45"] {
+  --rotateY: 45deg;
+}
+[s-rotateY="90"] {
+  --rotateY: 90deg;
+}
+[s-rotateY="180"] {
+  --rotateY: 180deg;
+}
+[s-rotateY="275"] {
+  --rotateY: 180deg;
+}
+[s-rotateY="360"] {
+  --rotateY: 180deg;
+}
+[s-rotateX="45"] {
+  --rotateX: 45deg;
+}
+[s-rotateX="90"] {
+  --rotateX: 90deg;
+}
+[s-rotateX="180"] {
+  --rotateX: 180deg;
+}
+[s-rotateX="275"] {
+  --rotateX: 180deg;
+}
+[s-rotateX="360"] {
+  --rotateX: 180deg;
+}
 /* ------------------------ ANIMATION ------------------------- */
 [s-l-to-r="true"] {
   animation: s-l-to-r var(--duration) cubic-bezier(0, 0.76, 0.69, 1);
@@ -75,7 +107,7 @@
 @keyframes s-l-to-r {
   from {
     opacity: 0;
-    transform: translateX(-100vw) scale(var(--scale)) rotateZ(var(--rotateZ));
+    transform: translateX(-100vw) scale(var(--scale)) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
   }
   to {
     transform: translateX(0);
@@ -85,7 +117,7 @@
 @keyframes s-t-to-b {
   from {
     opacity: 0;
-    transform: translateY(-200px) scale(var(--scale)) rotateZ(var(--rotateZ));
+    transform: translateY(-200px) scale(var(--scale)) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
   }
   to {
     transform: translateY(0) scale(1);
@@ -95,7 +127,7 @@
 @keyframes s-b-to-t {
   from {
     opacity: 0;
-    transform: translateY(400px) scale(var(--scale)) rotateZ(var(--rotateZ));
+    transform: translateY(400px) scale(var(--scale)) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
   }
   to {
     transform: translateY(0) scale(1);
@@ -105,7 +137,7 @@
 @keyframes s-r-to-l {
   from {
     opacity: 0;
-    transform: translateX(100vw) scale(var(--scale)) rotateZ(var(--rotateZ));
+    transform: translateX(100vw) scale(var(--scale)) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
   }
   to {
     transform: translateX(0);
