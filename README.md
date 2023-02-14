@@ -17,7 +17,9 @@
 - Dynamic and **Easy** syntax
 
 ## Attribute example
-- `s-b-to-t` : Animate elements from bottom to top.
-- `s-t-to-b` : Animate elements from top to bottom.
-- `s-l-to-r` : Animate elements from left to right.
-- `s-r-to-l` : Animate elements from right to left.
+|Attribute|Description|
+|---------|-----------|
+|`s-b-to-t` | Animate elements from bottom to top |
+|`s-t-to-b` | Animate elements from top to bottom |
+|`s-l-to-r` | Animate elements from left to right |
+|`s-r-to-l` | Animate elements from right to left |
